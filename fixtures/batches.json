@@ -1,0 +1,77 @@
+{
+  "pages": [
+    {
+      "page": "a1",
+      "path": "fixtures/pages/a1.xml",
+      "batch": "scan-01",
+      "rotation": 0,
+      "barcodes": [
+        "SYN-A"
+      ],
+      "ocr_revision": "1",
+      "replaces": null
+    },
+    {
+      "page": "b1",
+      "path": "fixtures/pages/b1.xml",
+      "batch": "scan-01",
+      "rotation": 90,
+      "barcodes": [
+        "SYN-B"
+      ],
+      "ocr_revision": "1",
+      "replaces": null
+    },
+    {
+      "page": "a2",
+      "path": "fixtures/pages/a2.xml",
+      "batch": "scan-01",
+      "rotation": 0,
+      "barcodes": [],
+      "ocr_revision": "1",
+      "replaces": null
+    },
+    {
+      "page": "a2-new",
+      "path": "fixtures/pages/a2-new.xml",
+      "batch": "scan-02",
+      "rotation": 0,
+      "barcodes": [],
+      "ocr_revision": "2",
+      "replaces": "a2"
+    },
+    {
+      "page": "a1-duplicate",
+      "path": "fixtures/pages/a1-duplicate.xml",
+      "batch": "scan-01",
+      "rotation": 0,
+      "barcodes": [
+        "SYN-A"
+      ],
+      "ocr_revision": "1",
+      "replaces": null
+    },
+    {
+      "page": "conflict",
+      "path": "fixtures/pages/conflict.xml",
+      "batch": "scan-01",
+      "rotation": 0,
+      "barcodes": [
+        "SYN-A",
+        "SYN-C"
+      ],
+      "ocr_revision": "1",
+      "replaces": null
+    }
+  ],
+  "scan_order": [
+    "a1",
+    "b1",
+    "a2",
+    "a1-duplicate",
+    "conflict"
+  ],
+  "updated_pages": [
+    "a2-new"
+  ]
+}
